@@ -1,0 +1,8 @@
+# Plugin modules
+# - plugin-interface.ts
+# - metrics/
+# - allure/
+# - zephyr/
+# - morpheus/
+# - visual/
+# - api-mock/

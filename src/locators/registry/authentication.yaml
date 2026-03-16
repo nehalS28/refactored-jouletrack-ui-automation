@@ -1,0 +1,76 @@
+# Authentication Domain Locators
+# Migrated from jouletrack-ui-automation/test/pageObjects/loginPage.ts
+# This file contains all locators for authentication-related pages (login, forgot password)
+
+authentication:
+  login:
+    emailInput:
+      selector: "//input[@id='email-input']"
+      strategy: xpath
+      description: "Email input field on login page"
+    
+    passwordInput:
+      selector: "//input[@id='password-input']"
+      strategy: xpath
+      description: "Password input field on login page"
+    
+    loginButton:
+      selector: "//button[@id='login-btn']"
+      strategy: xpath
+      description: "Login submit button"
+    
+    forgotPasswordLink:
+      selector: "//a[contains(.,'Forgot your password')]"
+      strategy: xpath
+      description: "Forgot password link"
+    
+    visibilityIcon:
+      selector: "//mat-icon[contains(.,'visibility')]"
+      strategy: xpath
+      description: "Password visibility toggle icon (eye icon)"
+    
+    emptyFieldError:
+      selector: "//mat-error[contains(text(),'{field} is required')]"
+      strategy: xpath
+      description: "Error message for empty required fields (parameterized with {field})"
+    
+    siteChangeDropdown:
+      selector: "//div[contains(@class,'app-site-change')]//button"
+      strategy: xpath
+      description: "Site selection dropdown button"
+
+  forgotPassword:
+    emailInput:
+      selector: "//input[@formcontrolname='userId']"
+      strategy: xpath
+      description: "Email input on password reset page"
+    
+    recoveryEmailInput:
+      selector: "//input[@type='email']"
+      strategy: xpath
+      description: "Recovery email input field (alternative selector)"
+    
+    resetButton:
+      selector: "//button[contains(.,'SEND RESET LINK')]"
+      strategy: xpath
+      description: "Send reset link button"
+    
+    resetLinkButton:
+      selector: "//button[contains(@class,'reset')]"
+      strategy: xpath
+      description: "Reset link button (alternative selector)"
+    
+    backToLoginLink:
+      selector: "//a[contains(.,'{linkText}')]"
+      strategy: xpath
+      description: "Back to login link (parameterized with {linkText})"
+    
+    dejouleLogo:
+      selector: "//img[contains(@src,'dejoule-dark')]"
+      strategy: xpath
+      description: "DeJoule company logo (dark theme)"
+    
+    smartjoulesLogo:
+      selector: "//img[contains(@src,'dejoule-logo')]"
+      strategy: xpath
+      description: "SmartJoules company logo"

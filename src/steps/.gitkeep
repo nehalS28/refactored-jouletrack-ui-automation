@@ -1,0 +1,5 @@
+# Domain-organized step definitions
+# - shared/
+# - authentication/
+# - dashboard/
+# - reports/

@@ -1,0 +1,158 @@
+# Dashboard Domain Locators
+# @module locators/registry/dashboard
+# @requirements 1.1, 1.3
+#
+# This file defines all UI element locators for the dashboard domain.
+# Locators are organized by page and component for easy maintenance.
+
+dashboard:
+  header:
+    logo:
+      selector: "[data-testid='dashboard-logo']"
+      strategy: data-testid
+      description: "Dashboard logo in header"
+    
+    userMenu:
+      selector: "[data-testid='user-menu']"
+      strategy: data-testid
+      description: "User menu dropdown trigger"
+    
+    userAvatar:
+      selector: "[data-testid='user-avatar']"
+      strategy: data-testid
+      description: "User avatar image in header"
+    
+    notificationBell:
+      selector: "[data-testid='notification-bell']"
+      strategy: data-testid
+      description: "Notification bell icon"
+    
+    notificationCount:
+      selector: "[data-testid='notification-count']"
+      strategy: data-testid
+      description: "Notification count badge"
+    
+    searchInput:
+      selector: "[data-testid='global-search']"
+      strategy: data-testid
+      description: "Global search input field"
+
+  sidebar:
+    container:
+      selector: "[data-testid='sidebar']"
+      strategy: data-testid
+      description: "Main sidebar navigation container"
+    
+    toggleButton:
+      selector: "[data-testid='sidebar-toggle']"
+      strategy: data-testid
+      description: "Sidebar collapse/expand toggle"
+    
+    dashboardLink:
+      selector: "[data-testid='nav-dashboard']"
+      strategy: data-testid
+      description: "Dashboard navigation link"
+    
+    reportsLink:
+      selector: "[data-testid='nav-reports']"
+      strategy: data-testid
+      description: "Reports navigation link"
+    
+    settingsLink:
+      selector: "[data-testid='nav-settings']"
+      strategy: data-testid
+      description: "Settings navigation link"
+    
+    helpLink:
+      selector: "[data-testid='nav-help']"
+      strategy: data-testid
+      description: "Help/Support navigation link"
+
+  overview:
+    container:
+      selector: "[data-testid='dashboard-overview']"
+      strategy: data-testid
+      description: "Dashboard overview section container"
+    
+    welcomeMessage:
+      selector: "[data-testid='welcome-message']"
+      strategy: data-testid
+      description: "Welcome message with user name"
+    
+    lastLoginTime:
+      selector: "[data-testid='last-login']"
+      strategy: data-testid
+      description: "Last login timestamp display"
+
+  widgets:
+    energyConsumption:
+      selector: "[data-testid='widget-energy-consumption']"
+      strategy: data-testid
+      description: "Energy consumption widget"
+    
+    costSavings:
+      selector: "[data-testid='widget-cost-savings']"
+      strategy: data-testid
+      description: "Cost savings widget"
+    
+    systemStatus:
+      selector: "[data-testid='widget-system-status']"
+      strategy: data-testid
+      description: "System status widget"
+    
+    recentAlerts:
+      selector: "[data-testid='widget-recent-alerts']"
+      strategy: data-testid
+      description: "Recent alerts widget"
+    
+    quickActions:
+      selector: "[data-testid='widget-quick-actions']"
+      strategy: data-testid
+      description: "Quick actions widget"
+
+  charts:
+    energyChart:
+      selector: "[data-testid='chart-energy']"
+      strategy: data-testid
+      description: "Energy consumption chart"
+    
+    temperatureChart:
+      selector: "[data-testid='chart-temperature']"
+      strategy: data-testid
+      description: "Temperature trend chart"
+    
+    chartLegend:
+      selector: "[data-testid='chart-legend']"
+      strategy: data-testid
+      description: "Chart legend container"
+    
+    chartTooltip:
+      selector: ".chart-tooltip"
+      strategy: css
+      description: "Chart data point tooltip"
+    
+    dateRangePicker:
+      selector: "[data-testid='chart-date-range']"
+      strategy: data-testid
+      description: "Date range picker for charts"
+
+  alerts:
+    container:
+      selector: "[data-testid='alerts-container']"
+      strategy: data-testid
+      description: "Alerts list container"
+    
+    alertItem:
+      selector: "[data-testid='alert-item']"
+      strategy: data-testid
+      description: "Individual alert item"
+    
+    dismissButton:
+      selector: "[data-testid='alert-dismiss']"
+      strategy: data-testid
+      description: "Dismiss alert button"
+    
+    viewAllLink:
+      selector: "[data-testid='alerts-view-all']"
+      strategy: data-testid
+      description: "View all alerts link"

@@ -1,0 +1,41 @@
+# Authentication test data fixtures
+# Supports environment variable references using ${VAR} syntax
+
+validUser:
+  value:
+    username: ${TEST_USER_EMAIL}
+    password: ${TEST_USER_PASSWORD}
+  sensitive: true
+  environment: [local, ci, staging, production]
+
+adminUser:
+  value:
+    username: ${TEST_ADMIN_EMAIL}
+    password: ${TEST_ADMIN_PASSWORD}
+  sensitive: true
+  environment: [local, ci, staging]
+
+invalidCredentials:
+  value:
+    username: "invalid@example.com"
+    password: "wrongpassword"
+  sensitive: false
+
+emptyCredentials:
+  value:
+    username: ""
+    password: ""
+  sensitive: false
+
+specialCharacters:
+  value:
+    username: "test+user@example.com"
+    password: "P@ssw0rd!#$%"
+  sensitive: false
+
+lockedUser:
+  value:
+    username: ${TEST_LOCKED_USER_EMAIL}
+    password: ${TEST_LOCKED_USER_PASSWORD}
+  sensitive: true
+  environment: [local, staging]

@@ -1,0 +1,20 @@
+@{{domain}} @automated
+Feature: {{featureTitle}}
+  As a user
+  I want to {{featureDescription}}
+  So that I can {{featureBenefit}}
+
+  Background:
+    Given the application is running
+
+  @smoke
+  Scenario: {{scenarioName}}
+    Given {{givenStep}}
+    When {{whenStep}}
+    Then {{thenStep}}
+
+  @regression
+  Scenario: {{negativeScenarioName}}
+    Given {{negativeGivenStep}}
+    When {{negativeWhenStep}}
+    Then {{negativeThenStep}}

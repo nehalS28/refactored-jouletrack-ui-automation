@@ -1,0 +1,46 @@
+{
+  "environment": "staging",
+  "baseUrl": "${STAGING_BASE_URL}",
+  "browser": {
+    "name": "chrome",
+    "headless": true,
+    "windowSize": { "width": 1920, "height": 1080 },
+    "args": ["--no-sandbox", "--disable-dev-shm-usage"]
+  },
+  "timeouts": {
+    "implicit": 0,
+    "explicit": 15000,
+    "pageLoad": 45000,
+    "script": 15000,
+    "polling": 250
+  },
+  "retry": {
+    "maxAttempts": 3,
+    "backoffMs": 1500,
+    "backoffMultiplier": 2
+  },
+  "parallel": {
+    "enabled": true,
+    "workers": 2
+  },
+  "logging": {
+    "level": "info",
+    "structured": true
+  },
+  "plugins": {
+    "enabled": ["metrics", "allure", "zephyr"],
+    "metrics": {
+      "dbPath": "./data/metrics.db",
+      "slowLocatorThresholdMs": 500,
+      "performanceRegressionThreshold": 0.5
+    },
+    "allure": {
+      "outputDir": "./reports/allure-results",
+      "screenshotOnFailure": true
+    },
+    "zephyr": {
+      "projectKey": "${ZEPHYR_PROJECT_KEY}",
+      "batchSize": 50
+    }
+  }
+}

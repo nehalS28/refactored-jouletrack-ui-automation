@@ -1,0 +1,41 @@
+/**
+ * Step definitions for {{featureName}} functionality.
+ * Delegates business logic to {{PageName}}Page page object.
+ * 
+ * @module steps/{{domain}}/{{featureName}}
+ * @requirements 9.1, 9.4, 9.5
+ */
+
+import { Given, When, Then } from '@cucumber/cucumber';
+import { expect } from 'vitest';
+import type { TestContext } from '../../types/context.types.js';
+import { {{PageName}}Page } from '../../pages/{{domain}}/{{featureName}}-page.js';
+
+/**
+ * Navigate to the {{featureName}} page
+ * @requirements 9.5
+ */
+Given('I am on the {{featureName}} page', async function (this: { context: TestContext }) {
+  const page = new {{PageName}}Page(this.context);
+  await page.navigate();
+});
+
+/**
+ * TODO: Add step definitions for {{featureName}} functionality
+ * @requirements 9.1, 9.5
+ */
+When('I perform an action on {{featureName}}', async function (this: { context: TestContext }) {
+  const page = new {{PageName}}Page(this.context);
+  // TODO: Implement action
+  throw new Error('Step not implemented');
+});
+
+/**
+ * TODO: Add verification step definitions
+ * @requirements 9.5
+ */
+Then('I should see the expected result', async function (this: { context: TestContext }) {
+  const page = new {{PageName}}Page(this.context);
+  // TODO: Implement verification
+  throw new Error('Step not implemented');
+});

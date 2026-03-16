@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/types/**/*",
+    "src/core/**/*",
+    "src/pages/**/*",
+    "src/steps/**/*",
+    "src/locators/generated/**/*"
+  ],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.property.test.ts",
+    "cli/**/*",
+    "src/plugins/**/*",
+    "src/data/**/*"
+  ]
+}

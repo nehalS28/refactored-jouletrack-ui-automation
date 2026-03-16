@@ -1,0 +1,182 @@
+# Reports Domain Locators
+# @module locators/registry/reports
+# @requirements 1.1, 1.3
+#
+# This file defines all UI element locators for the reports domain.
+# Locators are organized by page and component for easy maintenance.
+
+reports:
+  list:
+    container:
+      selector: "[data-testid='reports-list']"
+      strategy: data-testid
+      description: "Reports list container"
+    
+    searchInput:
+      selector: "[data-testid='reports-search']"
+      strategy: data-testid
+      description: "Search input for filtering reports"
+    
+    filterDropdown:
+      selector: "[data-testid='reports-filter']"
+      strategy: data-testid
+      description: "Filter dropdown for report types"
+    
+    sortDropdown:
+      selector: "[data-testid='reports-sort']"
+      strategy: data-testid
+      description: "Sort dropdown for report ordering"
+    
+    createButton:
+      selector: "[data-testid='reports-create']"
+      strategy: data-testid
+      description: "Create new report button"
+    
+    reportRow:
+      selector: "[data-testid='report-row']"
+      strategy: data-testid
+      description: "Individual report row in list"
+    
+    pagination:
+      selector: "[data-testid='reports-pagination']"
+      strategy: data-testid
+      description: "Pagination controls for reports list"
+    
+    emptyState:
+      selector: "[data-testid='reports-empty']"
+      strategy: data-testid
+      description: "Empty state when no reports exist"
+
+  viewer:
+    container:
+      selector: "[data-testid='report-viewer']"
+      strategy: data-testid
+      description: "Report viewer container"
+    
+    title:
+      selector: "[data-testid='report-title']"
+      strategy: data-testid
+      description: "Report title heading"
+    
+    dateRange:
+      selector: "[data-testid='report-date-range']"
+      strategy: data-testid
+      description: "Report date range display"
+    
+    downloadButton:
+      selector: "[data-testid='report-download']"
+      strategy: data-testid
+      description: "Download report button"
+    
+    printButton:
+      selector: "[data-testid='report-print']"
+      strategy: data-testid
+      description: "Print report button"
+    
+    shareButton:
+      selector: "[data-testid='report-share']"
+      strategy: data-testid
+      description: "Share report button"
+    
+    backButton:
+      selector: "[data-testid='report-back']"
+      strategy: data-testid
+      description: "Back to reports list button"
+
+  generator:
+    container:
+      selector: "[data-testid='report-generator']"
+      strategy: data-testid
+      description: "Report generator form container"
+    
+    reportTypeSelect:
+      selector: "[data-testid='report-type-select']"
+      strategy: data-testid
+      description: "Report type selection dropdown"
+    
+    startDateInput:
+      selector: "[data-testid='report-start-date']"
+      strategy: data-testid
+      description: "Report start date input"
+    
+    endDateInput:
+      selector: "[data-testid='report-end-date']"
+      strategy: data-testid
+      description: "Report end date input"
+    
+    siteSelect:
+      selector: "[data-testid='report-site-select']"
+      strategy: data-testid
+      description: "Site selection for report"
+    
+    metricsCheckboxes:
+      selector: "[data-testid='report-metrics']"
+      strategy: data-testid
+      description: "Metrics selection checkboxes"
+    
+    formatSelect:
+      selector: "[data-testid='report-format']"
+      strategy: data-testid
+      description: "Report output format selection"
+    
+    generateButton:
+      selector: "[data-testid='report-generate']"
+      strategy: data-testid
+      description: "Generate report button"
+    
+    cancelButton:
+      selector: "[data-testid='report-cancel']"
+      strategy: data-testid
+      description: "Cancel report generation button"
+    
+    progressIndicator:
+      selector: "[data-testid='report-progress']"
+      strategy: data-testid
+      description: "Report generation progress indicator"
+
+  schedule:
+    container:
+      selector: "[data-testid='report-schedule']"
+      strategy: data-testid
+      description: "Report scheduling container"
+    
+    frequencySelect:
+      selector: "[data-testid='schedule-frequency']"
+      strategy: data-testid
+      description: "Schedule frequency dropdown"
+    
+    recipientsInput:
+      selector: "[data-testid='schedule-recipients']"
+      strategy: data-testid
+      description: "Email recipients input"
+    
+    enableToggle:
+      selector: "[data-testid='schedule-enable']"
+      strategy: data-testid
+      description: "Enable/disable schedule toggle"
+    
+    saveButton:
+      selector: "[data-testid='schedule-save']"
+      strategy: data-testid
+      description: "Save schedule button"
+
+  charts:
+    energyUsageChart:
+      selector: "[data-testid='report-chart-energy']"
+      strategy: data-testid
+      description: "Energy usage chart in report"
+    
+    costAnalysisChart:
+      selector: "[data-testid='report-chart-cost']"
+      strategy: data-testid
+      description: "Cost analysis chart in report"
+    
+    comparisonChart:
+      selector: "[data-testid='report-chart-comparison']"
+      strategy: data-testid
+      description: "Period comparison chart"
+    
+    exportChartButton:
+      selector: "[data-testid='chart-export']"
+      strategy: data-testid
+      description: "Export chart as image button"

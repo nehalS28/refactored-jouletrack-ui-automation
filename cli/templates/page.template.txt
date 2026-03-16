@@ -1,0 +1,52 @@
+/**
+ * {{PageName}}Page class for the UI automation framework.
+ * Provides business actions for the {{pageName}} page.
+ *
+ * @module pages/{{domain}}/{{pageName}}-page
+ * @requirements 2.1, 2.3, 2.4
+ */
+
+import { BasePage } from '../base-page.js';
+import type { TestContext } from '../../types/context.types.js';
+
+/**
+ * Page object for the {{pageName}} page.
+ * Implements business actions for {{pageName}} functionality.
+ *
+ * @requirements 2.1, 2.3, 2.4
+ */
+export class {{PageName}}Page extends BasePage<{{PageName}}Page> {
+  /**
+   * Unique name identifier for this page.
+   */
+  readonly pageName = '{{pageName}}-page';
+
+  /**
+   * Creates a new {{PageName}}Page instance.
+   *
+   * @param context - Worker-scoped TestContext providing framework services
+   */
+  constructor(context: TestContext) {
+    super(context);
+  }
+
+  /**
+   * Gets the URL path for the {{pageName}} page.
+   */
+  protected get pageUrl(): string {
+    return '/{{pageName}}';
+  }
+
+  /**
+   * TODO: Add business action methods for {{pageName}} page.
+   * Example:
+   * 
+   * async performAction(): Promise<this> {
+   *   this.logger.debug('Performing action', { page: this.pageName });
+   *   await this.actions.click(this.locators.{{domain}}.{{pageName}}.actionButton);
+   *   return this;
+   * }
+   *
+   * @requirements 2.5
+   */
+}

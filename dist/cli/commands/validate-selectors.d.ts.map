@@ -1,0 +1,1 @@
+{"version":3,"file":"validate-selectors.d.ts","sourceRoot":"","sources":["../../../cli/commands/validate-selectors.ts"],"names":[],"mappings":"AAAA;;;;;;GAMG;AAqGH;;;;GAIG;AACH,wBAAsB,iBAAiB,CAAC,OAAO,GAAE;IAC/C,YAAY,CAAC,EAAE,MAAM,CAAC;IACtB,QAAQ,CAAC,EAAE,MAAM,CAAC;IAClB,OAAO,CAAC,EAAE,MAAM,CAAC;CACb,GAAG,OAAO,CAAC,IAAI,CAAC,CA8FrB"}

@@ -1,0 +1,258 @@
+# Settings Domain Locators
+# @module locators/registry/settings
+# @requirements 1.1, 1.3
+#
+# This file defines all UI element locators for the settings domain.
+# Locators are organized by page and component for easy maintenance.
+
+settings:
+  navigation:
+    container:
+      selector: "[data-testid='settings-nav']"
+      strategy: data-testid
+      description: "Settings navigation sidebar"
+    
+    profileLink:
+      selector: "[data-testid='settings-nav-profile']"
+      strategy: data-testid
+      description: "Profile settings navigation link"
+    
+    securityLink:
+      selector: "[data-testid='settings-nav-security']"
+      strategy: data-testid
+      description: "Security settings navigation link"
+    
+    notificationsLink:
+      selector: "[data-testid='settings-nav-notifications']"
+      strategy: data-testid
+      description: "Notifications settings navigation link"
+    
+    preferencesLink:
+      selector: "[data-testid='settings-nav-preferences']"
+      strategy: data-testid
+      description: "Preferences settings navigation link"
+    
+    integrationsLink:
+      selector: "[data-testid='settings-nav-integrations']"
+      strategy: data-testid
+      description: "Integrations settings navigation link"
+
+  profile:
+    container:
+      selector: "[data-testid='settings-profile']"
+      strategy: data-testid
+      description: "Profile settings container"
+    
+    avatarUpload:
+      selector: "[data-testid='profile-avatar-upload']"
+      strategy: data-testid
+      description: "Avatar upload input"
+    
+    avatarPreview:
+      selector: "[data-testid='profile-avatar-preview']"
+      strategy: data-testid
+      description: "Avatar preview image"
+    
+    firstNameInput:
+      selector: "[data-testid='profile-firstname']"
+      strategy: data-testid
+      description: "First name input field"
+    
+    lastNameInput:
+      selector: "[data-testid='profile-lastname']"
+      strategy: data-testid
+      description: "Last name input field"
+    
+    emailInput:
+      selector: "[data-testid='profile-email']"
+      strategy: data-testid
+      description: "Email input field"
+    
+    phoneInput:
+      selector: "[data-testid='profile-phone']"
+      strategy: data-testid
+      description: "Phone number input field"
+    
+    timezoneSelect:
+      selector: "[data-testid='profile-timezone']"
+      strategy: data-testid
+      description: "Timezone selection dropdown"
+    
+    saveButton:
+      selector: "[data-testid='profile-save']"
+      strategy: data-testid
+      description: "Save profile changes button"
+    
+    cancelButton:
+      selector: "[data-testid='profile-cancel']"
+      strategy: data-testid
+      description: "Cancel profile changes button"
+
+  security:
+    container:
+      selector: "[data-testid='settings-security']"
+      strategy: data-testid
+      description: "Security settings container"
+    
+    currentPasswordInput:
+      selector: "[data-testid='security-current-password']"
+      strategy: data-testid
+      description: "Current password input"
+    
+    newPasswordInput:
+      selector: "[data-testid='security-new-password']"
+      strategy: data-testid
+      description: "New password input"
+    
+    confirmPasswordInput:
+      selector: "[data-testid='security-confirm-password']"
+      strategy: data-testid
+      description: "Confirm new password input"
+    
+    changePasswordButton:
+      selector: "[data-testid='security-change-password']"
+      strategy: data-testid
+      description: "Change password button"
+    
+    twoFactorToggle:
+      selector: "[data-testid='security-2fa-toggle']"
+      strategy: data-testid
+      description: "Two-factor authentication toggle"
+    
+    twoFactorSetup:
+      selector: "[data-testid='security-2fa-setup']"
+      strategy: data-testid
+      description: "Two-factor authentication setup section"
+    
+    sessionsList:
+      selector: "[data-testid='security-sessions']"
+      strategy: data-testid
+      description: "Active sessions list"
+    
+    revokeSessionButton:
+      selector: "[data-testid='security-revoke-session']"
+      strategy: data-testid
+      description: "Revoke session button"
+    
+    revokeAllButton:
+      selector: "[data-testid='security-revoke-all']"
+      strategy: data-testid
+      description: "Revoke all sessions button"
+
+  notifications:
+    container:
+      selector: "[data-testid='settings-notifications']"
+      strategy: data-testid
+      description: "Notifications settings container"
+    
+    emailNotificationsToggle:
+      selector: "[data-testid='notifications-email']"
+      strategy: data-testid
+      description: "Email notifications toggle"
+    
+    pushNotificationsToggle:
+      selector: "[data-testid='notifications-push']"
+      strategy: data-testid
+      description: "Push notifications toggle"
+    
+    alertsToggle:
+      selector: "[data-testid='notifications-alerts']"
+      strategy: data-testid
+      description: "System alerts notifications toggle"
+    
+    reportsToggle:
+      selector: "[data-testid='notifications-reports']"
+      strategy: data-testid
+      description: "Report notifications toggle"
+    
+    digestFrequencySelect:
+      selector: "[data-testid='notifications-digest']"
+      strategy: data-testid
+      description: "Email digest frequency dropdown"
+    
+    saveButton:
+      selector: "[data-testid='notifications-save']"
+      strategy: data-testid
+      description: "Save notification settings button"
+
+  preferences:
+    container:
+      selector: "[data-testid='settings-preferences']"
+      strategy: data-testid
+      description: "Preferences settings container"
+    
+    languageSelect:
+      selector: "[data-testid='preferences-language']"
+      strategy: data-testid
+      description: "Language selection dropdown"
+    
+    themeSelect:
+      selector: "[data-testid='preferences-theme']"
+      strategy: data-testid
+      description: "Theme selection (light/dark/auto)"
+    
+    dateFormatSelect:
+      selector: "[data-testid='preferences-date-format']"
+      strategy: data-testid
+      description: "Date format selection"
+    
+    temperatureUnitSelect:
+      selector: "[data-testid='preferences-temp-unit']"
+      strategy: data-testid
+      description: "Temperature unit selection (C/F)"
+    
+    energyUnitSelect:
+      selector: "[data-testid='preferences-energy-unit']"
+      strategy: data-testid
+      description: "Energy unit selection"
+    
+    currencySelect:
+      selector: "[data-testid='preferences-currency']"
+      strategy: data-testid
+      description: "Currency selection"
+    
+    saveButton:
+      selector: "[data-testid='preferences-save']"
+      strategy: data-testid
+      description: "Save preferences button"
+
+  integrations:
+    container:
+      selector: "[data-testid='settings-integrations']"
+      strategy: data-testid
+      description: "Integrations settings container"
+    
+    apiKeyDisplay:
+      selector: "[data-testid='integrations-api-key']"
+      strategy: data-testid
+      description: "API key display field"
+    
+    regenerateKeyButton:
+      selector: "[data-testid='integrations-regenerate']"
+      strategy: data-testid
+      description: "Regenerate API key button"
+    
+    copyKeyButton:
+      selector: "[data-testid='integrations-copy']"
+      strategy: data-testid
+      description: "Copy API key button"
+    
+    webhookUrlInput:
+      selector: "[data-testid='integrations-webhook-url']"
+      strategy: data-testid
+      description: "Webhook URL input"
+    
+    webhookToggle:
+      selector: "[data-testid='integrations-webhook-toggle']"
+      strategy: data-testid
+      description: "Enable/disable webhook toggle"
+    
+    testWebhookButton:
+      selector: "[data-testid='integrations-test-webhook']"
+      strategy: data-testid
+      description: "Test webhook button"
+    
+    saveButton:
+      selector: "[data-testid='integrations-save']"
+      strategy: data-testid
+      description: "Save integrations settings button"
